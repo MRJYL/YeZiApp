@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F475DD0F44C9841A02FC440 /* libPods-LeafLoading.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4468D31F58A265DD3890A6D3 /* libPods-LeafLoading.a */; };
+		8A7D82071E9B1B9E005C887E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D82061E9B1B9E005C887E /* AppDelegate.m */; };
+		8A7D820A1E9B1B9E005C887E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D82091E9B1B9E005C887E /* main.m */; };
+		8A7D820F1E9B1B9E005C887E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7D820E1E9B1B9E005C887E /* Assets.xcassets */; };
+		8A7D82121E9B1B9E005C887E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7D82101E9B1B9E005C887E /* Main.storyboard */; };
+		8A7D82901E9B3008005C887E /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D828F1E9B3008005C887E /* TabViewController.m */; };
+		8A7D82931E9B3046005C887E /* NoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D82921E9B3046005C887E /* NoticeViewController.m */; };
+		8A7D82971E9B3055005C887E /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D82951E9B3055005C887E /* AccountViewController.m */; };
+		8A7D829B1E9B3442005C887E /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D829A1E9B3442005C887E /* QuestionViewController.m */; };
+		8A7D82A01E9B7E2D005C887E /* notice.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A7D829F1E9B7E2D005C887E /* notice.txt */; };
+		8A7D82AB1E9B814B005C887E /* NSView+YLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D82AA1E9B814B005C887E /* NSView+YLCategory.m */; };
+		8A7D82B01E9B81A4005C887E /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D82AF1E9B81A4005C887E /* Helper.m */; };
+		8A7D82B31E9B8CD1005C887E /* Q&A.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A7D82B21E9B8CD1005C887E /* Q&A.txt */; };
+		8AB2C8CC1EA0BAB20025E0EC /* LoginAppStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB2C8CB1EA0BAB20025E0EC /* LoginAppStoreManager.swift */; };
+		8AB2C8D01EA0C5B30025E0EC /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB2C8CF1EA0C5B30025E0EC /* InputViewController.swift */; };
+		8AB2C8D21EA0C6140025E0EC /* InputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AB2C8D11EA0C6140025E0EC /* InputViewController.xib */; };
+		8AB2C8D51EA0C8380025E0EC /* AddAppStoreAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB2C8D31EA0C8380025E0EC /* AddAppStoreAccount.swift */; };
+		8AB2C8D61EA0C8380025E0EC /* AddAppStoreAccount.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AB2C8D41EA0C8380025E0EC /* AddAppStoreAccount.xib */; };
+		8AC339671EA8A78800FB764A /* NSString+YLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC339661EA8A78800FB764A /* NSString+YLCategory.m */; };
+		8ACBE2841EA06444006E1B37 /* NSMutableAttributedString+YLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACBE2831EA06444006E1B37 /* NSMutableAttributedString+YLCategory.m */; };
+		8ACBE2871EA07C4E006E1B37 /* NSTextStorage+YLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACBE2861EA07C4E006E1B37 /* NSTextStorage+YLCategory.m */; };
+		8AFFC2841EA468E800CB02E6 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFC2831EA468E800CB02E6 /* AccountModel.m */; };
+		8AFFC2871EA46E3A00CB02E6 /* AccountCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFC2861EA46E3A00CB02E6 /* AccountCellView.m */; };
+		8AFFC28A1EA4A7C900CB02E6 /* AppleIdCache.json in Resources */ = {isa = PBXBuildFile; fileRef = 8AFFC2891EA4A7C900CB02E6 /* AppleIdCache.json */; };
+		8AFFC28D1EA4A7F100CB02E6 /* AccountViewController+DataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFC28C1EA4A7F100CB02E6 /* AccountViewController+DataOperation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EE0B3EC4ED68583DE3504B0 /* Pods-LeafLoading.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeafLoading.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeafLoading/Pods-LeafLoading.release.xcconfig"; sourceTree = "<group>"; };
+		4468D31F58A265DD3890A6D3 /* libPods-LeafLoading.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LeafLoading.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A7D82021E9B1B9E005C887E /* YeZiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YeZiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A7D82051E9B1B9E005C887E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A7D82061E9B1B9E005C887E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A7D82091E9B1B9E005C887E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A7D820E1E9B1B9E005C887E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A7D82111E9B1B9E005C887E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A7D82131E9B1B9E005C887E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A7D82811E9B2298005C887E /* LeafLoading.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeafLoading.pch; sourceTree = "<group>"; };
+		8A7D828E1E9B3008005C887E /* TabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
+		8A7D828F1E9B3008005C887E /* TabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
+		8A7D82911E9B3046005C887E /* NoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewController.h; sourceTree = "<group>"; };
+		8A7D82921E9B3046005C887E /* NoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeViewController.m; sourceTree = "<group>"; };
+		8A7D82941E9B3055005C887E /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		8A7D82951E9B3055005C887E /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		8A7D82991E9B3442005C887E /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		8A7D829A1E9B3442005C887E /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		8A7D829F1E9B7E2D005C887E /* notice.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notice.txt; sourceTree = "<group>"; };
+		8A7D82A91E9B814B005C887E /* NSView+YLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+YLCategory.h"; sourceTree = "<group>"; };
+		8A7D82AA1E9B814B005C887E /* NSView+YLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+YLCategory.m"; sourceTree = "<group>"; };
+		8A7D82AC1E9B8156005C887E /* YLCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCategory.h; sourceTree = "<group>"; };
+		8A7D82AE1E9B81A4005C887E /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		8A7D82AF1E9B81A4005C887E /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		8A7D82B11E9B81B7005C887E /* Macro-Def.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Macro-Def.h"; sourceTree = "<group>"; };
+		8A7D82B21E9B8CD1005C887E /* Q&A.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Q&A.txt"; sourceTree = "<group>"; };
+		8AB2C8CA1EA0BAB20025E0EC /* LeafLoading-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeafLoading-Bridging-Header.h"; sourceTree = "<group>"; };
+		8AB2C8CB1EA0BAB20025E0EC /* LoginAppStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAppStoreManager.swift; sourceTree = "<group>"; };
+		8AB2C8CF1EA0C5B30025E0EC /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		8AB2C8D11EA0C6140025E0EC /* InputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputViewController.xib; sourceTree = "<group>"; };
+		8AB2C8D31EA0C8380025E0EC /* AddAppStoreAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAppStoreAccount.swift; sourceTree = "<group>"; };
+		8AB2C8D41EA0C8380025E0EC /* AddAppStoreAccount.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddAppStoreAccount.xib; sourceTree = "<group>"; };
+		8AC339651EA8A78800FB764A /* NSString+YLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YLCategory.h"; sourceTree = "<group>"; };
+		8AC339661EA8A78800FB764A /* NSString+YLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YLCategory.m"; sourceTree = "<group>"; };
+		8ACBE2821EA06444006E1B37 /* NSMutableAttributedString+YLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+YLCategory.h"; sourceTree = "<group>"; };
+		8ACBE2831EA06444006E1B37 /* NSMutableAttributedString+YLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+YLCategory.m"; sourceTree = "<group>"; };
+		8ACBE2851EA07C4E006E1B37 /* NSTextStorage+YLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextStorage+YLCategory.h"; sourceTree = "<group>"; };
+		8ACBE2861EA07C4E006E1B37 /* NSTextStorage+YLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextStorage+YLCategory.m"; sourceTree = "<group>"; };
+		8AFFC2821EA468E800CB02E6 /* AccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountModel.h; sourceTree = "<group>"; };
+		8AFFC2831EA468E800CB02E6 /* AccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountModel.m; sourceTree = "<group>"; };
+		8AFFC2851EA46E3A00CB02E6 /* AccountCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountCellView.h; sourceTree = "<group>"; };
+		8AFFC2861EA46E3A00CB02E6 /* AccountCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountCellView.m; sourceTree = "<group>"; };
+		8AFFC2891EA4A7C900CB02E6 /* AppleIdCache.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppleIdCache.json; sourceTree = "<group>"; };
+		8AFFC28B1EA4A7F100CB02E6 /* AccountViewController+DataOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AccountViewController+DataOperation.h"; sourceTree = "<group>"; };
+		8AFFC28C1EA4A7F100CB02E6 /* AccountViewController+DataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AccountViewController+DataOperation.m"; sourceTree = "<group>"; };
+		CC282F7132CAB0EC868032CE /* Pods-LeafLoading.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeafLoading.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeafLoading/Pods-LeafLoading.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A7D81FF1E9B1B9E005C887E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F475DD0F44C9841A02FC440 /* libPods-LeafLoading.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C6EAC3145E3CDBC28C53731 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4468D31F58A265DD3890A6D3 /* libPods-LeafLoading.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A7D81F91E9B1B9E005C887E = {
+			isa = PBXGroup;
+			children = (
+				8A7D82041E9B1B9E005C887E /* LeafLoading */,
+				8A7D82031E9B1B9E005C887E /* Products */,
+				CD39080A8B186CE73F444B19 /* Pods */,
+				1C6EAC3145E3CDBC28C53731 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A7D82031E9B1B9E005C887E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A7D82021E9B1B9E005C887E /* YeZiApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A7D82041E9B1B9E005C887E /* LeafLoading */ = {
+			isa = PBXGroup;
+			children = (
+				8A7D82051E9B1B9E005C887E /* AppDelegate.h */,
+				8A7D82061E9B1B9E005C887E /* AppDelegate.m */,
+				8A7D828E1E9B3008005C887E /* TabViewController.h */,
+				8A7D828F1E9B3008005C887E /* TabViewController.m */,
+				8A7D82911E9B3046005C887E /* NoticeViewController.h */,
+				8A7D82921E9B3046005C887E /* NoticeViewController.m */,
+				8A7D82941E9B3055005C887E /* AccountViewController.h */,
+				8A7D82951E9B3055005C887E /* AccountViewController.m */,
+				8AFFC28B1EA4A7F100CB02E6 /* AccountViewController+DataOperation.h */,
+				8AFFC28C1EA4A7F100CB02E6 /* AccountViewController+DataOperation.m */,
+				8A7D82991E9B3442005C887E /* QuestionViewController.h */,
+				8A7D829A1E9B3442005C887E /* QuestionViewController.m */,
+				8AFFC2821EA468E800CB02E6 /* AccountModel.h */,
+				8AFFC2831EA468E800CB02E6 /* AccountModel.m */,
+				8AFFC2851EA46E3A00CB02E6 /* AccountCellView.h */,
+				8AFFC2861EA46E3A00CB02E6 /* AccountCellView.m */,
+				8AB2C8D31EA0C8380025E0EC /* AddAppStoreAccount.swift */,
+				8AB2C8D41EA0C8380025E0EC /* AddAppStoreAccount.xib */,
+				8AB2C8CF1EA0C5B30025E0EC /* InputViewController.swift */,
+				8AB2C8D11EA0C6140025E0EC /* InputViewController.xib */,
+				8AB2C8CB1EA0BAB20025E0EC /* LoginAppStoreManager.swift */,
+				8AFFC2891EA4A7C900CB02E6 /* AppleIdCache.json */,
+				8A7D82AD1E9B81A4005C887E /* Helper */,
+				8A7D82A81E9B814B005C887E /* Category */,
+				8A7D82811E9B2298005C887E /* LeafLoading.pch */,
+				8A7D820E1E9B1B9E005C887E /* Assets.xcassets */,
+				8A7D82101E9B1B9E005C887E /* Main.storyboard */,
+				8A7D82131E9B1B9E005C887E /* Info.plist */,
+				8A7D82081E9B1B9E005C887E /* Supporting Files */,
+				8A7D829F1E9B7E2D005C887E /* notice.txt */,
+				8AB2C8CA1EA0BAB20025E0EC /* LeafLoading-Bridging-Header.h */,
+			);
+			path = LeafLoading;
+			sourceTree = "<group>";
+		};
+		8A7D82081E9B1B9E005C887E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A7D82091E9B1B9E005C887E /* main.m */,
+				8A7D82B21E9B8CD1005C887E /* Q&A.txt */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A7D82A81E9B814B005C887E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8A7D82A91E9B814B005C887E /* NSView+YLCategory.h */,
+				8A7D82AA1E9B814B005C887E /* NSView+YLCategory.m */,
+				8A7D82AC1E9B8156005C887E /* YLCategory.h */,
+				8ACBE2821EA06444006E1B37 /* NSMutableAttributedString+YLCategory.h */,
+				8ACBE2831EA06444006E1B37 /* NSMutableAttributedString+YLCategory.m */,
+				8ACBE2851EA07C4E006E1B37 /* NSTextStorage+YLCategory.h */,
+				8ACBE2861EA07C4E006E1B37 /* NSTextStorage+YLCategory.m */,
+				8AC339651EA8A78800FB764A /* NSString+YLCategory.h */,
+				8AC339661EA8A78800FB764A /* NSString+YLCategory.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8A7D82AD1E9B81A4005C887E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8A7D82AE1E9B81A4005C887E /* Helper.h */,
+				8A7D82AF1E9B81A4005C887E /* Helper.m */,
+				8A7D82B11E9B81B7005C887E /* Macro-Def.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CD39080A8B186CE73F444B19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC282F7132CAB0EC868032CE /* Pods-LeafLoading.debug.xcconfig */,
+				0EE0B3EC4ED68583DE3504B0 /* Pods-LeafLoading.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A7D82011E9B1B9E005C887E /* YeZiApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A7D82161E9B1B9E005C887E /* Build configuration list for PBXNativeTarget "YeZiApp" */;
+			buildPhases = (
+				8EE1408D1100B2C1D4C79718 /* [CP] Check Pods Manifest.lock */,
+				8A7D81FE1E9B1B9E005C887E /* Sources */,
+				8A7D81FF1E9B1B9E005C887E /* Frameworks */,
+				8A7D82001E9B1B9E005C887E /* Resources */,
+				BC38DBCE1055B18B98971941 /* [CP] Embed Pods Frameworks */,
+				850198D6E1F4C80B505907FD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YeZiApp;
+			productName = LeafLoading;
+			productReference = 8A7D82021E9B1B9E005C887E /* YeZiApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A7D81FA1E9B1B9E005C887E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "云一程";
+				TargetAttributes = {
+					8A7D82011E9B1B9E005C887E = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = DE8C2PX8AN;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8A7D81FD1E9B1B9E005C887E /* Build configuration list for PBXProject "YeZiApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A7D81F91E9B1B9E005C887E;
+			productRefGroup = 8A7D82031E9B1B9E005C887E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A7D82011E9B1B9E005C887E /* YeZiApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A7D82001E9B1B9E005C887E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A7D82A01E9B7E2D005C887E /* notice.txt in Resources */,
+				8AB2C8D61EA0C8380025E0EC /* AddAppStoreAccount.xib in Resources */,
+				8AFFC28A1EA4A7C900CB02E6 /* AppleIdCache.json in Resources */,
+				8A7D82B31E9B8CD1005C887E /* Q&A.txt in Resources */,
+				8AB2C8D21EA0C6140025E0EC /* InputViewController.xib in Resources */,
+				8A7D820F1E9B1B9E005C887E /* Assets.xcassets in Resources */,
+				8A7D82121E9B1B9E005C887E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		850198D6E1F4C80B505907FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeafLoading/Pods-LeafLoading-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EE1408D1100B2C1D4C79718 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC38DBCE1055B18B98971941 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeafLoading/Pods-LeafLoading-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A7D81FE1E9B1B9E005C887E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AC339671EA8A78800FB764A /* NSString+YLCategory.m in Sources */,
+				8AB2C8CC1EA0BAB20025E0EC /* LoginAppStoreManager.swift in Sources */,
+				8AB2C8D51EA0C8380025E0EC /* AddAppStoreAccount.swift in Sources */,
+				8AFFC28D1EA4A7F100CB02E6 /* AccountViewController+DataOperation.m in Sources */,
+				8A7D82AB1E9B814B005C887E /* NSView+YLCategory.m in Sources */,
+				8AFFC2841EA468E800CB02E6 /* AccountModel.m in Sources */,
+				8A7D82901E9B3008005C887E /* TabViewController.m in Sources */,
+				8AFFC2871EA46E3A00CB02E6 /* AccountCellView.m in Sources */,
+				8AB2C8D01EA0C5B30025E0EC /* InputViewController.swift in Sources */,
+				8ACBE2841EA06444006E1B37 /* NSMutableAttributedString+YLCategory.m in Sources */,
+				8A7D82931E9B3046005C887E /* NoticeViewController.m in Sources */,
+				8A7D82B01E9B81A4005C887E /* Helper.m in Sources */,
+				8A7D820A1E9B1B9E005C887E /* main.m in Sources */,
+				8A7D82071E9B1B9E005C887E /* AppDelegate.m in Sources */,
+				8A7D829B1E9B3442005C887E /* QuestionViewController.m in Sources */,
+				8ACBE2871EA07C4E006E1B37 /* NSTextStorage+YLCategory.m in Sources */,
+				8A7D82971E9B3055005C887E /* AccountViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8A7D82101E9B1B9E005C887E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A7D82111E9B1B9E005C887E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A7D82141E9B1B9E005C887E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8A7D82151E9B1B9E005C887E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8A7D82171E9B1B9E005C887E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC282F7132CAB0EC868032CE /* Pods-LeafLoading.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DE8C2PX8AN;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LeafLoading/LeafLoading.pch";
+				INFOPLIST_FILE = LeafLoading/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = YeZiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LeafLoading/LeafLoading-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8A7D82181E9B1B9E005C887E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EE0B3EC4ED68583DE3504B0 /* Pods-LeafLoading.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DE8C2PX8AN;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LeafLoading/LeafLoading.pch";
+				INFOPLIST_FILE = LeafLoading/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = YeZiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LeafLoading/LeafLoading-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A7D81FD1E9B1B9E005C887E /* Build configuration list for PBXProject "YeZiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7D82141E9B1B9E005C887E /* Debug */,
+				8A7D82151E9B1B9E005C887E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A7D82161E9B1B9E005C887E /* Build configuration list for PBXNativeTarget "YeZiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7D82171E9B1B9E005C887E /* Debug */,
+				8A7D82181E9B1B9E005C887E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A7D81FA1E9B1B9E005C887E /* Project object */;
+}

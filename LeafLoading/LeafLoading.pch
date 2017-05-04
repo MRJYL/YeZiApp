@@ -1,0 +1,20 @@
+//
+//  LeafLoading.pch
+//  LeafLoading
+//
+//  Created by jinyulong on 2017/4/10.
+//  Copyright © 2017年 云一程. All rights reserved.
+//
+
+#ifndef LeafLoading_pch
+#define LeafLoading_pch
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "YLCategory.h"
+#import <AVOSCloud.h>
+#import "AccountModel.h"
+#import "Helper.h"
+#import "YeZiApp-Swift.h"
+
+#endif /* LeafLoading_pch */
