@@ -15,6 +15,25 @@
     return [NSString stringWithContentsOfURL:path encoding:NSUTF8StringEncoding error:nil];
 }
 
++ (void)getCategories:(void (^)(NSArray <NSString *>*categories))categories{
+    AVQuery *query = [AVQuery queryWithClassName:@"ASCategory"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"%@",error.description);
+        }else if(Valid_Array(objects)){
+            AVObject *object = objects.firstObject;
+            NSArray *category = [object objectForKey:@"category"];
+            if (Valid_Array(category)) {
+                categories(category);
+            }else{
+                categories([@[] copy]);
+            }
+        }else{
+            categories([@[] copy]);
+        }
+    }];
+}
+
 + (void)uploadActiviteCode{
     AVQuery *activiteQuery = [AVQuery queryWithClassName:@"AppActivityValue"];
     [activiteQuery whereKey:@"SerialNumber" equalTo:[NSString serialNumber]];

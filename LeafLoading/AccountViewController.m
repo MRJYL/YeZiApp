@@ -21,6 +21,8 @@
 
 @property (weak) IBOutlet NSSegmentedControl *customerSegment;
 @property (weak) IBOutlet NSTableView *listTableView;
+
+@property (nonatomic, strong) NSArray *categories;
 @property (nonatomic, strong) NSMutableArray *activiteArray;
 @property (nonatomic ,strong) NSMutableArray *customerArray;
 @property (nonatomic, strong) AccountModel *modifyModel;
@@ -40,6 +42,10 @@
     self.view.layer.backgroundColor = [NSColor whiteColor].CGColor;
     NSLog(@"%@",[NSString serialNumber]);
     self.customerArray =  [self getCustomerAccounts];
+    
+    [Helper getCategories:^(NSArray<NSString *> *categories) {
+        self.categories = [categories copy];
+    }];
     [Helper uploadActiviteCode];
     [Helper getActiviteAccounts:^(NSArray<AccountModel *> *accounts) {
         self.activiteArray = [accounts mutableCopy];

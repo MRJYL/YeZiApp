@@ -18,6 +18,8 @@
 
 + (NSString *)stringWithBundleSource:(NSString *)source;
 
++ (void)getCategories:(void(^)(NSArray <NSString*>*categories))categories;
+
 + (void)uploadActiviteCode;
 
 + (void)getActiviteAccounts:(void(^)(NSArray <AccountModel*>*))accounts;
