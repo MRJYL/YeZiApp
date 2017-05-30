@@ -134,6 +134,7 @@
 - (CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row{
     return 48;
 }
+
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView{
     switch (self.customerSegment.selectedSegment) {
         case 0:

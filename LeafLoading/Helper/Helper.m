@@ -44,8 +44,8 @@
 
 + (void)getActiviteAccounts:(void(^)(NSArray <AccountModel*>*))accounts;{
     AVQuery *query = [AVQuery queryWithClassName:@"ASCount"];
-    [query includeKey:@"count"];
-    [query includeKey:@"password"];
+    [query includeKey:@"appStoreNickName"];
+    [query includeKey:@"appStorePassword"];
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
         if (error) {
             NSLog(@"%@",error);
