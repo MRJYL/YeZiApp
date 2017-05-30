@@ -28,6 +28,15 @@
                 [activiteObject setObject:[NSString serialNumber] forKey:@"SerialNumber"];
                 [activiteObject setObject:[NSString activiteCode] forKey:@"ActiviteCode"];
                 NSLog(@"---------------------->%d",[activiteObject save]);
+            }else{
+                AVObject *activiteObject = objects.firstObject;
+                if (![[activiteObject objectForKey:@"ActiviteCode"] isEqualToString:[NSString activiteCode]]) {
+                    NSLog(@"激活码已失效，更新激活码");
+                    [activiteObject setObject:[NSString activiteCode] forKey:@"ActiviteCode"];
+                    AVSaveOption *option = [AVSaveOption new];
+                    option.query = activiteQuery;
+                    [activiteObject saveWithOption:option error:nil];
+                }
             }
         }
     }];
